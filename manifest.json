@@ -1,14 +1,18 @@
 {
-  "name": "A browser action with a popup that changes the page color",
-  "description": "Change the current page color",
+  "author": "Eric Tang",
+  "name": "Save Point",
+  "description": "Save Your Current Tabs",
   "version": "1.0",
   "permissions": [
-    "tabs", "http://*/*", "https://*/*"
+    "storage", "tabs", "http://*/*", "https://*/*"
   ],
   "browser_action": {
-      "default_title": "Set this page's color.",
-      "default_icon": "icon.png",
+      "default_title": "Save Point",
+      "default_icon": "images/save-point-icon.png",
       "default_popup": "popup.html"
   },
+  "icons": {
+      "128": "images/save-point-icon.png"
+   },
   "manifest_version": 2
 }
